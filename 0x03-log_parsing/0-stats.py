@@ -29,17 +29,18 @@ try:
 
         try:
             size += int(stlist[-1])
-        except ValueError:
+        except:
             pass
 
         try:
             if stlist[-2] in sts:
                 sts[stlist[-2]] += 1
-        except IndexError:
+        except:
             pass
-
-        printsts(sts, size)
+    
+    printsts(sts, size)
 
 except KeyboardInterrupt:
     printsts(sts, size)
     raise
+
