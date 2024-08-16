@@ -37,8 +37,7 @@ try:
                 sts[stlist[-2]] += 1
         except IndexError:
             pass
-    
-    printsts(sts, size)
+        printsts(sts, size)
 
 except KeyboardInterrupt:
     printsts(sts, size)
